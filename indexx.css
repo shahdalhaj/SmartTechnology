@@ -1,0 +1,93 @@
+body{
+    background: rgb(208, 245, 243);
+}
+#header{
+    background-color: rgb(252, 234, 223);
+    height: 90px;
+    margin: 0px;
+    padding:2px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(13, 128, 13);
+    text-align:center;
+    border:1px solid thistle;
+    background-color: thistle;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    bottom: 55px;
+  }
+  ul li{
+      color: rgb(27, 6, 102);
+      margin: 10px;
+  }
+  button{
+      height: 30px;
+      position: relative;
+      top: 7px;
+      background-color:rgb(252, 234, 223);
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 90px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    background: rgb(250, 233, 179);
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center ;
+    position: relative;
+    right: 30px;
+  }
+  
+.box-header {
+    color: rgb(240, 38, 72);
+    border: rgb(240, 38, 72);
+    background: whitesmoke;
+    border-radius: 15%;
+  }
+  .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 90px;
+    border:0.5px solid rgb(248, 238, 236);
+    margin-top: 20px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  .box p{
+    color: rgb(100, 8, 100);
+  }
+  
+  .box:nth-child(1) .img {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRg17BX_7ezawzUildNRYdUQ6pUQF0eVfQZlS7uS2EjNU9ugrMf&usqp=CAU);
+  }
+  
+  .box:nth-child(2) .img{
+      background-image: url(https://image.shutterstock.com/image-vector/realistic-smartphone-mockup-front-back-260nw-1450789832.jpg);
+  }
+  
+  .box:nth-child(3) .img {
+    background-image: url(https://image.shutterstock.com/image-vector/realistic-vector-set-mockup-new-260nw-691853176.jpg);
+  }
+ footer{
+     color: rgb(13, 100, 6);
+     border-top: 1px solid rgb(87, 4, 134);
+     padding: 0.5rem;
+ }
