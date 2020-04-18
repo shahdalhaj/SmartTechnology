@@ -1,93 +1,143 @@
-body{
-    background: rgb(208, 245, 243);
+body {
+  background: rgb(208, 245, 243);
 }
-#header{
-    background-color: rgb(252, 234, 223);
-    height: 90px;
-    margin: 0px;
-    padding:2px;
+#header {
+  background-color: rgb(252, 234, 223);
+  height: 90px;
+  margin: 0px;
+  padding: 2px;
 }
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(13, 128, 13);
-    text-align:center;
-    border:1px solid thistle;
-    background-color: thistle;
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(13, 128, 13);
+  text-align: center;
+  border: 1px solid thistle;
+  background-color: thistle;
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    position: relative;
-    bottom: 55px;
-  }
-  ul li{
-      color: rgb(27, 6, 102);
-      margin: 10px;
-  }
-  button{
-      height: 30px;
-      position: relative;
-      top: 7px;
-      background-color:rgb(252, 234, 223);
-  }
-  .container{
+ul {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  bottom: 55px;
+}
+ul li {
+  color: rgb(27, 6, 102);
+  margin: 10px;
+}
+button {
+  height: 30px;
+  position: relative;
+  top: 7px;
+  background-color: rgb(252, 234, 223);
+}
+.container {
+  display: flex;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+
+  background: rgb(250, 233, 179);
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  right: 30px;
+}
+
+.box-header {
+  color: rgb(240, 38, 72);
+  border: rgb(240, 38, 72);
+  background: whitesmoke;
+  border-radius: 15%;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 90px;
+  border: 0.5px solid rgb(248, 238, 236);
+  margin-top: 20px;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.box p {
+  color: rgb(100, 8, 100);
+}
+
+.box:nth-child(1) .img {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRg17BX_7ezawzUildNRYdUQ6pUQF0eVfQZlS7uS2EjNU9ugrMf&usqp=CAU);
+}
+
+.box:nth-child(2) .img {
+  background-image: url(https://image.shutterstock.com/image-vector/realistic-smartphone-mockup-front-back-260nw-1450789832.jpg);
+}
+
+.box:nth-child(3) .img {
+  background-image: url(https://image.shutterstock.com/image-vector/realistic-vector-set-mockup-new-260nw-691853176.jpg);
+}
+
+.box:nth-child(4) .img {
+  background-image: url(https://image.shutterstock.com/image-vector/realistic-vector-set-mockup-new-260nw-691853176.jpg);
+}
+
+.wrapper {
+  margin-left: 40px;
+}
+.row {
+  display: flex;
+}
+aside {
+  border: solid 3px red;
+  max-width: 300px;
+  line-height: 1.5em;
+  padding: 0px 7px 7px 7px;
+  background-color: cyan;
+  padding-bottom: 20px;
+  border-radius: 7px;
+}
+h2 {
+  text-align: center;
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  margin: 10px 40px 0px 40px;
+  border-radius: 10px;
+}
+.link {
+  background-color: red;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 90px;
   }
-  .box{
+  .wrapper {
     display: flex;
-    flex-direction: column ;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: auto;
-    background: rgb(250, 233, 179);
-    margin: 10px;
-    border-radius: 20px;
-    text-align: center ;
-    position: relative;
-    right: 30px;
   }
-  
-.box-header {
-    color: rgb(240, 38, 72);
-    border: rgb(240, 38, 72);
-    background: whitesmoke;
-    border-radius: 15%;
-  }
-  .img{
+  .row {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 90px;
-    border:0.5px solid rgb(248, 238, 236);
-    margin-top: 20px;
-    padding: 10px;
-    background-size: cover;
-    background-position: center;
+    margin-left: 10px;
   }
-  .box p{
-    color: rgb(100, 8, 100);
-  }
-  
-  .box:nth-child(1) .img {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRg17BX_7ezawzUildNRYdUQ6pUQF0eVfQZlS7uS2EjNU9ugrMf&usqp=CAU);
-  }
-  
-  .box:nth-child(2) .img{
-      background-image: url(https://image.shutterstock.com/image-vector/realistic-smartphone-mockup-front-back-260nw-1450789832.jpg);
-  }
-  
-  .box:nth-child(3) .img {
-    background-image: url(https://image.shutterstock.com/image-vector/realistic-vector-set-mockup-new-260nw-691853176.jpg);
-  }
- footer{
-     color: rgb(13, 100, 6);
-     border-top: 1px solid rgb(87, 4, 134);
-     padding: 0.5rem;
- }
+}
+
+footer {
+  color: rgb(13, 100, 6);
+  border-top: 1px solid rgb(87, 4, 134);
+  padding: 0.5rem;
+}
